@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ECAE6"
+    tools:context=".cadastro_dados_de_saude">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/baloo"
+        android:text="Dados de Saúde"
+        android:textColor="#F11010"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TvTiposangue"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Tipo Sanguíneo:"
+        android:textAlignment="center"
+        android:textColor="#000CFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvSexo" />
+
+    <Button
+        android:id="@+id/btn_Editar"
+
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="120dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="-4"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Editar"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edFilhos"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/TvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:text="Sexo:"
+        android:textAlignment="center"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvCPF" />
+
+    <TextView
+        android:id="@+id/TvCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="CPF:"
+        android:textAlignment="center"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/TvCirurgias"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Quantidade de cirurgias feitas:"
+        android:textAlignment="center"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvAlergias" />
+
+    <TextView
+        android:id="@+id/TvAlergias"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Alergias:"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvTiposangue" />
+
+    <TextView
+        android:id="@+id/TvQntdfilhos"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Quantidade de filhos:"
+        android:textAlignment="center"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvCirurgias" />
+
+    <EditText
+        android:id="@+id/edAlergias"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TvAlergias"
+        app:layout_constraintTop_toBottomOf="@+id/TvTiposangue" />
+
+    <RadioGroup
+        android:id="@+id/RgSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/TvSexo"
+        app:layout_constraintTop_toBottomOf="@+id/edCpf">
+
+        <RadioButton
+            android:id="@+id/RbMasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maculino"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/RbFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edCirurgias"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TvCirurgias"
+        app:layout_constraintTop_toBottomOf="@+id/edAlergias" />
+
+    <EditText
+        android:id="@+id/edFilhos"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/TvQntdfilhos"
+        app:layout_constraintTop_toBottomOf="@+id/edCirurgias" />
+
+    <EditText
+        android:id="@+id/edCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="14"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/TvCPF"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:text="ID:"
+        android:textColor="#000CFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/RgSexo"
+        app:layout_constraintTop_toBottomOf="@+id/edCpf" />
+
+    <TextView
+        android:id="@+id/tvIdPa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:shadowColor="#000000"
+        android:text="45"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_id"
+        app:layout_constraintTop_toBottomOf="@+id/edCpf"
+        tools:ignore="UnknownId" />
+
+    <Spinner
+        android:id="@+id/spinnerTSangue"
+        android:layout_width="164dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/TvTiposangue"
+        app:layout_constraintTop_toBottomOf="@+id/RgSexo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

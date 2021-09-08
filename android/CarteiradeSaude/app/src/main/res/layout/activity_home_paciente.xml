@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_paciente">
+
+    <Button
+        android:id="@+id/btnEnviar"
+
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="168dp"
+
+        android:background="@drawable/buttonshape"
+        android:onClick="abrir"
+        android:shadowColor="#000000"
+        android:shadowDx="-4"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="MEUS DADOS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgendamento"
+
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="-4"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="AGENDAR CONSULTA"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviar" />
+
+    <Button
+        android:id="@+id/btnAltdados"
+
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="236dp"
+
+        android:background="@drawable/buttonshape"
+        android:onClick="abrir"
+        android:shadowColor="#000000"
+        android:shadowDx="-4"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Dados de saúde"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Consultas"
+
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowDx="-4"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Minhas consultas"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgendamento" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="423dp"
+        android:layout_height="692dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fnd"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DD1818</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="drwer_bg">#D33232</color>
+    <color name="drwer_font">#F8F4F4</color>
+</resources>
